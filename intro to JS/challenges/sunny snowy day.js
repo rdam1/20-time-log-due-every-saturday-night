@@ -9,3 +9,4 @@ ellipse(80, 64, 100, 100);
 
 // The snowman
 fill(255, 255, 255);
+ellipse(200, 300, 150, 150);
