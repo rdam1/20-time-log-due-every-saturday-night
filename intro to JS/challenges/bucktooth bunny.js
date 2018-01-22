@@ -9,3 +9,5 @@ fill(0, 0, 0);
 ellipse(170, 150, eye, eye);  // left eye
 ellipse(230, 150, eye, eye);  // right eye
 
+line(150, 200, 250, 200);   // mouth
+
