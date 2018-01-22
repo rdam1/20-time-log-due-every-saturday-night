@@ -7,3 +7,5 @@ ellipse(200, 170, 150, 150);    // face
 
 fill(0, 0, 0);
 ellipse(170, 150, eye, eye);  // left eye
+ellipse(230, 150, eye, eye);  // right eye
+
