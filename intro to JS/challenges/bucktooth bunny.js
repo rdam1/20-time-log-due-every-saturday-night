@@ -6,3 +6,4 @@ ellipse(240, 70, 60, 120);  // right ear
 ellipse(200, 170, 150, 150);    // face
 
 fill(0, 0, 0);
+ellipse(170, 150, eye, eye);  // left eye
