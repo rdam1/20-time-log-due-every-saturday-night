@@ -1,0 +1,46 @@
+/* Create table about the people and what they do here */
+
+CREATE TABLE stars (id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT, phone TEXT, birthday TEXT);
+
+INSERT INTO stars (name, phone, birthday) VALUES("Cuci", "898989-89", "10-02-1956");
+INSERT INTO stars (name, phone, birthday) VALUES("Muci", "656565-89", "4-03-1988");
+INSERT INTO stars (name, phone, birthday) VALUES("Buci", "3423234-89", "13-12-1959");
+INSERT INTO stars (name, phone, birthday) VALUES("Maci", "2333223-89", "12-06-1990");
+INSERT INTO stars (name, phone, birthday) VALUES("Paci", "3423453-89", "11-11-1986");
+INSERT INTO stars (name, phone, birthday) VALUES("Boraci", "1231235-89", "30-02-1976");
+INSERT INTO stars (name, phone, birthday) VALUES("Amaci", "213434-89", "10-02-1956");
+INSERT INTO stars (name, phone, birthday) VALUES("Picaci", "523234-89", "11-04-1944");
+INSERT INTO stars (name, phone, birthday) VALUES("Pulaci", "3665732-89", "10-08-1951");
+INSERT INTO stars (name, phone, birthday) VALUES("Piscaci", "8883342-89", "10-01-1956");
+INSERT INTO stars (name, phone, birthday) VALUES("Muraci", "1235632-89", "23-02-1997");
+
+CREATE TABLE movies (id INTEGER PRIMARY KEY AUTOINCREMENT, movie_id INTEGER, name TEXT);
+
+INSERT INTO movies (movie_id, name) VALUES (1, "Sherlock");
+INSERT INTO movies (movie_id, name) VALUES (2, "Super-man");
+INSERT INTO movies (movie_id, name) VALUES (3, "Godfather");
+INSERT INTO movies (movie_id, name) VALUES (4, "Bat-Man");
+INSERT INTO movies (movie_id, name) VALUES (5, "The Revenant");
+
+CREATE TABLE movie_stars (id INTEGER PRIMARY KEY, star_id INTEGER, movie_id INTEGER);
+
+INSERT INTO movie_stars (star_id, movie_id) VALUES (1, 1);
+INSERT INTO movie_stars (star_id, movie_id) VALUES (2, 1);
+INSERT INTO movie_stars (star_id, movie_id) VALUES (6, 1);
+INSERT INTO movie_stars (star_id, movie_id) VALUES (8, 1);
+INSERT INTO movie_stars (star_id, movie_id) VALUES (3, 2);
+INSERT INTO movie_stars (star_id, movie_id) VALUES (4, 2);
+INSERT INTO movie_stars (star_id, movie_id) VALUES (5, 3);
+INSERT INTO movie_stars (star_id, movie_id) VALUES (7, 4);
+INSERT INTO movie_stars (star_id, movie_id) VALUES (9, 5);
+INSERT INTO movie_stars (star_id, movie_id) VALUES (10, 4);
+INSERT INTO movie_stars (star_id, movie_id) VALUES (11, 1);
+
+/* see stars name with movie */
+
+SELECT a.name, b.name FROM movie_stars
+    JOIN stars as a
+    ON a.id = movie_stars.star_id
+    JOIN movies as b
+    ON b.movie_id = movie_stars.movie_id;
+
