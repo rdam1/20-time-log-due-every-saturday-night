@@ -1,0 +1,21 @@
+create table inventory (id integer primary key, item text, price integer, tax integer, stock integer);
+
+insert into inventory values (1, "sock", 1, 0.13, 1);
+insert into inventory values (2, "fork", 12, 1.56, 200);
+insert into inventory values (3, "yes", 10000000, 1300000, 0);
+insert into inventory values (4, "bike tire", 20, 2.60, 0.5);
+insert into inventory values (5, "assless chaps", 230, 29.9, 8);
+insert into inventory values (6, "6", 6, 0.66, 666666);
+insert into inventory values (7, "yeet", 9823478937, 1277052261.81, 0);
+insert into inventory values (8, "why", 1, 0.13, 1);
+insert into inventory values (9, "does", 1, 0.13, 1);
+insert into inventory values (10, "there", 1, 0.13, 1);
+insert into inventory values (11, "have", 1, 0.13, 1);
+insert into inventory values (12, "to", 1, 0.13, 1);
+insert into inventory values (13, "be", 1, 0.13, 1);
+insert into inventory values (14, "15", 1, 0.13, 1);
+insert into inventory values (15, "items", 7, 0.91, 791);
+
+select * from inventory;
+select id, item, price from inventory group by price;
+select item, sum(stock) from inventory;
