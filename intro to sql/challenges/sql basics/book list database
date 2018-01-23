@@ -1,0 +1,4 @@
+CREATE TABLE aaaa (id INTEGER PRIMARY KEY, name TEXT, rating INTEGER); 
+INSERT INTO aaaa VALUES (1, "a", 1);
+INSERT INTO aaaa VALUES (2, "aa", 2);
+INSERT INTO aaaa VALUES (3, "aaa", 3);
