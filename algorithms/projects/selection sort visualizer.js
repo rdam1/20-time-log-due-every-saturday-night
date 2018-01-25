@@ -70,15 +70,15 @@ var array = [4, 3, 2, 1];
 array = selectionSort(array);
 
 xOffset = 200;
-var array2 = [384, 0, 0, 3];
+var array2 = [round((random(0,100))), round((random(0,100))), round((random(0,100))), round((random(0,100)))];
 array2 = selectionSort(array2);
 
 xOffset = 0;
 yOffset = 190;
-var array3 = [902, 1, 2938, 4];
+var array3 = [round((random(0,100))), round((random(0,100))), round((random(0,100))), round((random(0,100)))];
 array3 = selectionSort(array3);
 
 xOffset = 200;
 yOffset = 190;
-var array4 = [97, 45, 33, 1];
+var array4 = [round((random(0,100))), round((random(0,100))), round((random(0,100))), round((random(0,100)))];
 array4 = selectionSort(array4);
